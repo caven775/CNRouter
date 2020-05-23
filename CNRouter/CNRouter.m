@@ -77,7 +77,16 @@ typedef NSString *CNRouterNameClass;
 - (BOOL)route:(NSString *)route request:(CNRouterRequest *)request
 {
     NSAssert(route.length, @"route 不合法");
-    return [self openRouteWithRequest:request];
+    CNRouterRequest *_request = [self checkRoute:request.route];
+    _request.params = request.params;
+    _request.callBack = request.callBack;
+    _request.style = request.style;
+    _request.animated = request.animated;
+    _request.storyboard = request.storyboard;
+    _request.storyboardBundle = request.storyboardBundle;
+    _request.storyboardIdentifier = request.storyboardIdentifier;
+    _request.modalPresentationStyle = request.modalPresentationStyle;
+    return [self openRouteWithRequest:_request];
 }
 
 
