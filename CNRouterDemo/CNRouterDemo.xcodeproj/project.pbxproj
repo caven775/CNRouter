@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3E8B90E92478DE71003C3A95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B90E82478DE71003C3A95 /* AppDelegate.m */; };
-		3E8B90EC2478DE71003C3A95 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B90EB2478DE71003C3A95 /* SceneDelegate.m */; };
 		3E8B90EF2478DE71003C3A95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B90EE2478DE71003C3A95 /* ViewController.m */; };
-		3E8B90F22478DE71003C3A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B90F02478DE71003C3A95 /* Main.storyboard */; };
 		3E8B90F42478DE76003C3A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B90F32478DE76003C3A95 /* Assets.xcassets */; };
 		3E8B90F72478DE76003C3A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B90F52478DE76003C3A95 /* LaunchScreen.storyboard */; };
 		3E8B90FA2478DE76003C3A95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B90F92478DE76003C3A95 /* main.m */; };
 		3E8B91042478DE77003C3A95 /* CNRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B91032478DE77003C3A95 /* CNRouterDemoTests.m */; };
 		3E8B910F2478DE77003C3A95 /* CNRouterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B910E2478DE77003C3A95 /* CNRouterDemoUITests.m */; };
-		3E8B911F2478DF84003C3A95 /* CNRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B911E2478DF84003C3A95 /* CNRouter.m */; };
-		3E8B91222478DFF2003C3A95 /* CNRouterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B91212478DFF2003C3A95 /* CNRouterRequest.m */; };
+		3E8B912B2479110A003C3A95 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B912A2479110A003C3A95 /* ViewController1.m */; };
+		3E8B912E24791124003C3A95 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B912C24791123003C3A95 /* ViewController2.m */; };
+		3E8B9131247911F2003C3A95 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B9130247911F2003C3A95 /* ViewController3.m */; };
+		3E8B913424791268003C3A95 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B913324791268003C3A95 /* NavigationViewController.m */; };
+		3E8B9137247917B3003C3A95 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B9136247917B3003C3A95 /* ViewController4.m */; };
+		E9A967877356DDC161D9DBC5 /* libPods-CNRouterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3F61A65AC091D84FD671AC /* libPods-CNRouterDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3F61A65AC091D84FD671AC /* libPods-CNRouterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CNRouterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B90E42478DE71003C3A95 /* CNRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B90E72478DE71003C3A95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E8B90E82478DE71003C3A95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E8B90EA2478DE71003C3A95 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		3E8B90EB2478DE71003C3A95 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		3E8B90ED2478DE71003C3A95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3E8B90EE2478DE71003C3A95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E8B90F12478DE71003C3A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E8B90F32478DE76003C3A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E8B90F62478DE76003C3A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E8B90F82478DE76003C3A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,11 +56,18 @@
 		3E8B910A2478DE77003C3A95 /* CNRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B910E2478DE77003C3A95 /* CNRouterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNRouterDemoUITests.m; sourceTree = "<group>"; };
 		3E8B91102478DE77003C3A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E8B911D2478DF84003C3A95 /* CNRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNRouter.h; sourceTree = "<group>"; };
-		3E8B911E2478DF84003C3A95 /* CNRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNRouter.m; sourceTree = "<group>"; };
-		3E8B91202478DFF2003C3A95 /* CNRouterRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNRouterRequest.h; sourceTree = "<group>"; };
-		3E8B91212478DFF2003C3A95 /* CNRouterRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNRouterRequest.m; sourceTree = "<group>"; };
-		3E8B91232478E036003C3A95 /* CNRouterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNRouterProtocol.h; sourceTree = "<group>"; };
+		3E8B91292479110A003C3A95 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		3E8B912A2479110A003C3A95 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		3E8B912C24791123003C3A95 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = /Users/linkewen/Desktop/CNRouter/CNRouterDemo/CNRouterDemo/ViewController2.m; sourceTree = "<absolute>"; };
+		3E8B912D24791124003C3A95 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = /Users/linkewen/Desktop/CNRouter/CNRouterDemo/CNRouterDemo/ViewController2.h; sourceTree = "<absolute>"; };
+		3E8B912F247911F2003C3A95 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		3E8B9130247911F2003C3A95 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		3E8B913224791268003C3A95 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		3E8B913324791268003C3A95 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		3E8B9135247917B3003C3A95 /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		3E8B9136247917B3003C3A95 /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		69119575E5496E860C727660 /* Pods-CNRouterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNRouterDemo.release.xcconfig"; path = "Target Support Files/Pods-CNRouterDemo/Pods-CNRouterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6EC03464FB7869AC913D3D41 /* Pods-CNRouterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNRouterDemo.debug.xcconfig"; path = "Target Support Files/Pods-CNRouterDemo/Pods-CNRouterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A967877356DDC161D9DBC5 /* libPods-CNRouterDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,14 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16321CCF396A4C3EFA08A70F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EC03464FB7869AC913D3D41 /* Pods-CNRouterDemo.debug.xcconfig */,
+				69119575E5496E860C727660 /* Pods-CNRouterDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E8B90DB2478DE71003C3A95 = {
 			isa = PBXGroup;
 			children = (
-				3E8B911C2478DEA9003C3A95 /* CNRouter */,
 				3E8B90E62478DE71003C3A95 /* CNRouterDemo */,
 				3E8B91022478DE77003C3A95 /* CNRouterDemoTests */,
 				3E8B910D2478DE77003C3A95 /* CNRouterDemoUITests */,
 				3E8B90E52478DE71003C3A95 /* Products */,
+				16321CCF396A4C3EFA08A70F /* Pods */,
+				64C99207D13AADC8F1832BAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,11 +132,18 @@
 			children = (
 				3E8B90E72478DE71003C3A95 /* AppDelegate.h */,
 				3E8B90E82478DE71003C3A95 /* AppDelegate.m */,
-				3E8B90EA2478DE71003C3A95 /* SceneDelegate.h */,
-				3E8B90EB2478DE71003C3A95 /* SceneDelegate.m */,
+				3E8B913224791268003C3A95 /* NavigationViewController.h */,
+				3E8B913324791268003C3A95 /* NavigationViewController.m */,
 				3E8B90ED2478DE71003C3A95 /* ViewController.h */,
 				3E8B90EE2478DE71003C3A95 /* ViewController.m */,
-				3E8B90F02478DE71003C3A95 /* Main.storyboard */,
+				3E8B91292479110A003C3A95 /* ViewController1.h */,
+				3E8B912A2479110A003C3A95 /* ViewController1.m */,
+				3E8B912D24791124003C3A95 /* ViewController2.h */,
+				3E8B912C24791123003C3A95 /* ViewController2.m */,
+				3E8B912F247911F2003C3A95 /* ViewController3.h */,
+				3E8B9130247911F2003C3A95 /* ViewController3.m */,
+				3E8B9135247917B3003C3A95 /* ViewController4.h */,
+				3E8B9136247917B3003C3A95 /* ViewController4.m */,
 				3E8B90F32478DE76003C3A95 /* Assets.xcassets */,
 				3E8B90F52478DE76003C3A95 /* LaunchScreen.storyboard */,
 				3E8B90F82478DE76003C3A95 /* Info.plist */,
@@ -145,17 +170,12 @@
 			path = CNRouterDemoUITests;
 			sourceTree = "<group>";
 		};
-		3E8B911C2478DEA9003C3A95 /* CNRouter */ = {
+		64C99207D13AADC8F1832BAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E8B911D2478DF84003C3A95 /* CNRouter.h */,
-				3E8B911E2478DF84003C3A95 /* CNRouter.m */,
-				3E8B91232478E036003C3A95 /* CNRouterProtocol.h */,
-				3E8B91202478DFF2003C3A95 /* CNRouterRequest.h */,
-				3E8B91212478DFF2003C3A95 /* CNRouterRequest.m */,
+				1E3F61A65AC091D84FD671AC /* libPods-CNRouterDemo.a */,
 			);
-			name = CNRouter;
-			path = ../CNRouter;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E8B91132478DE77003C3A95 /* Build configuration list for PBXNativeTarget "CNRouterDemo" */;
 			buildPhases = (
+				BD105A06ADBF66A52C355271 /* [CP] Check Pods Manifest.lock */,
 				3E8B90E02478DE71003C3A95 /* Sources */,
 				3E8B90E12478DE71003C3A95 /* Frameworks */,
 				3E8B90E22478DE71003C3A95 /* Resources */,
@@ -263,7 +284,6 @@
 			files = (
 				3E8B90F72478DE76003C3A95 /* LaunchScreen.storyboard in Resources */,
 				3E8B90F42478DE76003C3A95 /* Assets.xcassets in Resources */,
-				3E8B90F22478DE71003C3A95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +303,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BD105A06ADBF66A52C355271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNRouterDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E8B90E02478DE71003C3A95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8B911F2478DF84003C3A95 /* CNRouter.m in Sources */,
+				3E8B912B2479110A003C3A95 /* ViewController1.m in Sources */,
 				3E8B90EF2478DE71003C3A95 /* ViewController.m in Sources */,
+				3E8B913424791268003C3A95 /* NavigationViewController.m in Sources */,
+				3E8B9131247911F2003C3A95 /* ViewController3.m in Sources */,
+				3E8B912E24791124003C3A95 /* ViewController2.m in Sources */,
 				3E8B90E92478DE71003C3A95 /* AppDelegate.m in Sources */,
 				3E8B90FA2478DE76003C3A95 /* main.m in Sources */,
-				3E8B90EC2478DE71003C3A95 /* SceneDelegate.m in Sources */,
-				3E8B91222478DFF2003C3A95 /* CNRouterRequest.m in Sources */,
+				3E8B9137247917B3003C3A95 /* ViewController4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E8B90F02478DE71003C3A95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E8B90F12478DE71003C3A95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E8B90F52478DE76003C3A95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,6 +499,7 @@
 		};
 		3E8B91142478DE77003C3A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC03464FB7869AC913D3D41 /* Pods-CNRouterDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +518,7 @@
 		};
 		3E8B91152478DE77003C3A95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69119575E5496E860C727660 /* Pods-CNRouterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

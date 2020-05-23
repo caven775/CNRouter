@@ -1,0 +1,16 @@
+PODS:
+  - CNRouter (0.0.1)
+
+DEPENDENCIES:
+  - CNRouter (from `../`)
+
+EXTERNAL SOURCES:
+  CNRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CNRouter: b109ea32e82d39c9073095635a6ef8b614c302be
+
+PODFILE CHECKSUM: 538aae09c3c593acc7cffcd8620e40d1e906b81c
+
+COCOAPODS: 1.7.5

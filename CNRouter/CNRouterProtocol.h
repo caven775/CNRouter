@@ -8,9 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@class CNRouterRequest;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol CNRouterProtocol <NSObject>
+
+@required
++ (NSString *)cn_registerRoute;
+
+
+@optional
+- (void)cn_routeForReuqest:(CNRouterRequest *)request;
+
 
 @end
 

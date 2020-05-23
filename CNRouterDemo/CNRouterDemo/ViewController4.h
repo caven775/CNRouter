@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  ViewController4.h
 //  CNRouterDemo
 //
 //  Created by Caven on 2020/5/23.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface ViewController4 : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

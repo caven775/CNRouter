@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController3.h
 //  CNRouterDemo
 //
 //  Created by Caven on 2020/5/23.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic) UIWindow *window;
+@interface ViewController3 : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

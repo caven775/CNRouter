@@ -1,0 +1,26 @@
+{
+  "name": "CNRouter",
+  "version": "0.0.1",
+  "summary": "CNRouter",
+  "homepage": "https://github.com/haixi595282775/CNRouter",
+  "license": "MIT",
+  "authors": {
+    "caven": "595282775@qq.com"
+  },
+  "source": {
+    "git": "git@github.com:haixi595282775/CNRouter.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "CNRouter/**/*.{h,m}",
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ]
+}
