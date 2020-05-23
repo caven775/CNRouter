@@ -8,6 +8,7 @@
 
 #import "ViewController1.h"
 #import <CNRouter.h>
+#import <CNRouterRequest.h>
 
 @interface ViewController1 () <CNRouterProtocol>
 
@@ -16,6 +17,11 @@
 @implementation ViewController1
 
 CNRouterRegister(@"https://github.com/haixi595282775/CNRouter");
+
+- (void)cn_routeForReuqest:(CNRouterRequest *)reuqest
+{
+    NSLog(@"route ===== %@, param == %@, query == %@", reuqest.route, reuqest.params, reuqest.query);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

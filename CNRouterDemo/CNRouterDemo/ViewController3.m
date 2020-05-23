@@ -18,7 +18,7 @@
 
 @implementation ViewController3
 
-CNRouterRegister(@"mine/about?id=100&name=2000")
+CNRouterRegister(@"mine/about")
 
 - (void)cn_routeForReuqest:(CNRouterRequest *)reuqest
 {

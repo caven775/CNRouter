@@ -77,6 +77,11 @@ NS_ASSUME_NONNULL_BEGIN
         style:(CNRouterAnimationStyle)style
      callBack:(nullable CNRouterRequestCallBack)callBack;
 
+/// 进场
+/// @param route 路由
+/// @param request request
+- (BOOL)route:(NSString *)route
+      request:(CNRouterRequest *)request;
 
 @end
 

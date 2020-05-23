@@ -74,6 +74,12 @@ typedef NSString *CNRouterNameClass;
     return [self openRouteWithRequest:request];
 }
 
+- (BOOL)route:(NSString *)route request:(CNRouterRequest *)request
+{
+    NSAssert(route.length, @"route 不合法");
+    return [self openRouteWithRequest:request];
+}
+
 
 #pragma mark - private
 
@@ -91,15 +97,16 @@ typedef NSString *CNRouterNameClass;
 
 - (NSDictionary *)queryFromURL:(NSURL *)url
 {
+    if (!url) { return nil;}
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
-    if (!url) { return dictionary;}
     NSURLComponents *compenents = [NSURLComponents componentsWithString:url.absoluteString];
-    if (compenents) {
+    if (compenents && compenents.queryItems) {
         [compenents.queryItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [dictionary setObject:(obj.value ? obj.value : [NSNull null]) forKey:obj.name];
         }];
+        return dictionary.copy;
     }
-    return dictionary.copy;
+    return nil;
 }
 
 - (NSString *)wrapRoute:(NSString *)route retainQuery:(BOOL)retainQuery
@@ -136,16 +143,30 @@ typedef NSString *CNRouterNameClass;
              stringByAppendingString:q.host]
             stringByAppendingString:q.path];
         }
-        NSString *routeClass = self.routes[key];
-        if (routeClass) {
-            Class cls = NSClassFromString(routeClass);
-            if (cls && object_isClass(object_getClass(UIViewController.class))) {
-                UIViewController *instance = [[cls alloc] init];
-                if ([instance conformsToProtocol:@protocol(CNRouterProtocol)] &&
-                    [instance respondsToSelector:@selector(cn_routeForReuqest:)]) {
-                    [(id)instance cn_routeForReuqest:q];
-                }
+        if (q.storyboard && q.storyboardIdentifier && q.storyboardBundle) {
+            UIViewController *instance = nil;
+            @try {
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:q.storyboard bundle:q.storyboardBundle];
+                instance = [storyboard instantiateViewControllerWithIdentifier:q.storyboardIdentifier];
+            } @catch (NSException *exception) {
+#if DEBUG
+                NSLog(@"CNRouter == %@", exception);
+#endif
+            } @finally {
                 return instance;
+            }
+        } else {
+            NSString *routeClass = self.routes[key];
+            if (routeClass) {
+                Class cls = NSClassFromString(routeClass);
+                if (cls && object_isClass(object_getClass(UIViewController.class))) {
+                    UIViewController *instance = [[cls alloc] init];
+                    if ([instance conformsToProtocol:@protocol(CNRouterProtocol)] &&
+                        [instance respondsToSelector:@selector(cn_routeForReuqest:)]) {
+                        [(id)instance cn_routeForReuqest:q];
+                    }
+                    return instance;
+                }
             }
         }
         return nil;
@@ -184,6 +205,9 @@ typedef NSString *CNRouterNameClass;
         }
         UIViewController *present = [self.delegate router:self viewControllerForRoute:request.route];
         if (!present) { return NO;}
+        if (@available(iOS 13, *)) {
+            controller.modalPresentationStyle = request.modalPresentationStyle;
+        }
         [present presentViewController:controller animated:request.animated completion:nil];
         return YES;
     }

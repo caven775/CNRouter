@@ -31,7 +31,7 @@ CNRouterRegister(@"/home/detail");
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [[CNRouter sharedRouter] route:@"mine/about?id=100&name=2000" params:@{@"test": @"name"} animated:YES style:CNRouterAnimationStylePresent callBack:^(id  _Nullable params) {
+    [[CNRouter sharedRouter] route:@"mine/about?id=100&name=2000" params:@{@"test": @"name"} animated:YES style:CNRouterAnimationStylePush callBack:^(id  _Nullable params) {
         NSLog(@"callBack == %@", params);
     }];
 }
