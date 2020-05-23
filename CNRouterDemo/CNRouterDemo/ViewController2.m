@@ -17,7 +17,7 @@
 
 CNRouterRegister(@"/home/detail");
 
-- (void)cn_routeForReuqest:(CNRouterRequest *)reuqest
+- (void)cn_routeForRequest:(CNRouterRequest *)reuqest
 {
     NSLog(@"route ===== %@, param == %@, query == %@", reuqest.route, reuqest.params, reuqest.query);
 }

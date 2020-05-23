@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @optional
-- (void)cn_routeForReuqest:(CNRouterRequest *)request;
+- (void)cn_routeForRequest:(CNRouterRequest *)request;
 
 
 @end

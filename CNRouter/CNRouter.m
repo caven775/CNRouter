@@ -162,8 +162,8 @@ typedef NSString *CNRouterNameClass;
                 if (cls && object_isClass(object_getClass(UIViewController.class))) {
                     UIViewController *instance = [[cls alloc] init];
                     if ([instance conformsToProtocol:@protocol(CNRouterProtocol)] &&
-                        [instance respondsToSelector:@selector(cn_routeForReuqest:)]) {
-                        [(id)instance cn_routeForReuqest:q];
+                        [instance respondsToSelector:@selector(cn_routeForRequest:)]) {
+                        [(id)instance cn_routeForRequest:q];
                     }
                     return instance;
                 }
